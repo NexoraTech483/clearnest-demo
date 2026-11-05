@@ -1,0 +1,323 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ClearNest Cleaning Co. - Professional home and office cleaning services in Namibia.">
+  <title>ClearNest Cleaning Co. | A Cleaner Space</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7faf9;
+      color: #172b36;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #102b3a;
+      color: white;
+      padding: 18px 8%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .logo {
+      font-size: 23px;
+      font-weight: bold;
+    }
+
+    .logo span {
+      color: #36c6b0;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #36c6b0;
+    }
+
+    .hero {
+      background: linear-gradient(120deg, #102b3a, #174e5a);
+      color: white;
+      padding: 110px 8%;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: clamp(36px, 6vw, 58px);
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: #48d7bd;
+    }
+
+    .hero p {
+      max-width: 620px;
+      margin: 0 auto 30px;
+      color: #d7e9e7;
+      font-size: 17px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #36c6b0;
+      color: #102b3a;
+      padding: 13px 25px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background: #65dfca;
+    }
+
+    section {
+      padding: 75px 8%;
+    }
+
+    .section-heading {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section-heading h2 {
+      font-size: 34px;
+      color: #102b3a;
+      margin-bottom: 10px;
+    }
+
+    .section-heading p {
+      color: #687b83;
+    }
+
+    .services-grid,
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 22px;
+    }
+
+    .service-card,
+    .feature-card {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 5px 22px rgba(16,43,58,0.07);
+    }
+
+    .service-card .symbol {
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
+
+    .service-card h3,
+    .feature-card h3 {
+      color: #174e5a;
+      margin-bottom: 10px;
+    }
+
+    .service-card p,
+    .feature-card p {
+      color: #687b83;
+      font-size: 15px;
+    }
+
+    .about {
+      background: #eaf4f2;
+      text-align: center;
+    }
+
+    .about-content {
+      max-width: 750px;
+      margin: auto;
+    }
+
+    .about-content p {
+      color: #526971;
+      margin-bottom: 18px;
+    }
+
+    .contact {
+      background: #102b3a;
+      color: white;
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-size: 34px;
+      margin-bottom: 15px;
+    }
+
+    .contact p {
+      color: #d7e9e7;
+      margin-bottom: 25px;
+    }
+
+    footer {
+      background: #0b202c;
+      color: #b7c9ce;
+      text-align: center;
+      padding: 22px 8%;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        justify-content: center;
+        text-align: center;
+      }
+
+      nav {
+        justify-content: center;
+        gap: 13px;
+      }
+
+      .hero {
+        padding: 80px 7%;
+      }
+
+      section {
+        padding: 60px 7%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">Clear<span>Nest.</span></div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#why-us">Why Us</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <h1>A Cleaner Space.<br><span>A Better Feeling.</span></h1>
+
+      <p>
+        Discover a fresher, cleaner environment with professional
+        residential and commercial cleaning solutions.
+      </p>
+
+      <a href="#contact" class="btn">Get In Touch</a>
+    </section>
+
+    <section id="services">
+      <div class="section-heading">
+        <h2>Our Services</h2>
+        <p>Thoughtful cleaning solutions for every space.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="symbol">🏡</div>
+          <h3>Residential Cleaning</h3>
+          <p>Keep your home fresh, organised and welcoming with our home cleaning concept.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="symbol">🏢</div>
+          <h3>Office Cleaning</h3>
+          <p>Create a clean and comfortable workspace for employees and visitors.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="symbol">✨</div>
+          <h3>Deep Cleaning</h3>
+          <p>A detailed cleaning service concept for spaces that need extra attention.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-content">
+        <div class="section-heading">
+          <h2>About ClearNest</h2>
+          <p>A fresh approach to cleaner spaces.</p>
+        </div>
+
+        <p>
+          ClearNest Cleaning Co. is a fictional business concept
+          created to demonstrate modern website design by NEXORA.
+        </p>
+
+        <p>
+          Our concept focuses on simplicity, reliability and
+          creating spaces where people feel comfortable.
+        </p>
+      </div>
+    </section>
+
+    <section id="why-us">
+      <div class="section-heading">
+        <h2>Why Choose Us?</h2>
+        <p>The values behind the ClearNest concept.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <h3>Attention to Detail</h3>
+          <p>Every space deserves care and thoughtful attention.</p>
+        </div>
+
+        <div class="feature-card">
+          <h3>Professional Approach</h3>
+          <p>A clean, organised and customer-focused experience.</p>
+        </div>
+
+        <div class="feature-card">
+          <h3>Fresh Spaces</h3>
+          <p>Designed around comfort, cleanliness and peace of mind.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Let's Make Spaces Shine.</h2>
+      <p>Interested in learning more about the ClearNest concept?</p>
+      <a href="mailto:hello@example.com" class="btn">Contact Us</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 ClearNest Cleaning Co. | Fictional portfolio concept by NEXORA.</p>
+  </footer>
+
+</body>
+  </html>
+          
